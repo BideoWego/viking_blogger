@@ -441,34 +441,72 @@ body {
 div {
   border: 1px solid #000; }
 
-.navbar {
-  height: 72px; }
-  .navbar:before, .navbar:after {
+.navbar,
+.navbar .logo-container,
+.navbar .nav-form-container,
+.search-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto; }
+  .navbar:before, .navbar:after,
+  .navbar .logo-container:before,
+  .navbar .logo-container:after,
+  .navbar .nav-form-container:before,
+  .navbar .nav-form-container:after,
+  .search-container:before,
+  .search-container:after {
     display: table;
     content: ""; }
-  .navbar:after {
+  .navbar:after,
+  .navbar .logo-container:after,
+  .navbar .nav-form-container:after,
+  .search-container:after {
     clear: both; }
-  .navbar .logo-container {
-    padding-left: 10px; }
-    .navbar .logo-container img {
-      width: 45px;
-      height: 45px; }
-    .navbar .logo-container h2 {
-      font-size: 24px;
-      display: inline-block; }
-    .navbar .logo-container img,
-    .navbar .logo-container h2 {
-      vertical-align: middle; }
-  .navbar .nav-form-container {
-    float: right; }
-    .navbar .nav-form-container .button {
-      font-size: 24px;
-      text-align: center;
-      width: 195px; }
-  .navbar .logo-container,
+
+.navbar .logo-container {
+  padding-left: 10px;
+  float: left; }
+  .navbar .logo-container img {
+    width: 45px;
+    height: 45px; }
+  .navbar .logo-container h2 {
+    font-size: 24px;
+    display: inline-block; }
+  .navbar .logo-container img,
+  .navbar .logo-container h2 {
+    vertical-align: middle; }
+.navbar .nav-form-container {
+  float: right; }
   .navbar .nav-form-container .button {
-    display: inline-block;
-    line-height: 70px; }
+    font-size: 24px;
+    text-align: center;
+    width: 195px;
+    display: inline-block; }
+.navbar .logo-container,
+.navbar .nav-form-container .button {
+  line-height: 70px; }
+
+.search-container {
+  margin: 30px auto;
+  width: 640px; }
+  .search-container input {
+    padding: 2px; }
+  .search-container .search-bar,
+  .search-container .search-submit {
+    font-size: 24px;
+    line-height: 34px;
+    border: 1px solid #999; }
+  .search-container .search-bar {
+    text-indent: 1em;
+    width: 456px; }
+  .search-container .search-submit {
+    width: 136px;
+    margin-left: 16px; }
 
 .cta-button {
   font-weight: bold;

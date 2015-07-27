@@ -13,12 +13,18 @@ div {
 	border: 1px solid #000;
 }
 
+.navbar,
+.navbar .logo-container,
+.navbar .nav-form-container,
+.search-container {
+	@include container;
+}
+
 .navbar {
-	@include clearfix;
-	height: 72px;
 
 	.logo-container {
 		padding-left: 10px;
+		float: left;
 
 		img {
 			width: 45px;
@@ -43,13 +49,39 @@ div {
 			font-size: 24px;
 			text-align: center;
 			width: 195px;
+			display: inline-block;
 		}
 	}
 
 	.logo-container,
 	.nav-form-container .button {
-		display: inline-block;
 		line-height: 70px;
+	}
+}
+
+.search-container {
+	margin: 30px auto;
+	width: 640px;
+
+	input {
+		padding: 2px;
+	}
+
+	.search-bar,
+	.search-submit {
+		font-size: 24px;
+		line-height: 34px;
+		border: 1px solid #999;
+	}
+
+	.search-bar {
+		text-indent: 1em;
+		width: 456px;
+	}
+
+	.search-submit {
+		width: 136px;
+		margin-left: 16px;
 	}
 }
 
