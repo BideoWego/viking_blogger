@@ -1,0 +1,60 @@
+/* style */
+
+@import '../reset/reset';
+@import '../reset/normalize';
+
+@import 'mixins';
+
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+div {
+	border: 1px solid #000;
+}
+
+.navbar {
+	@include clearfix;
+	height: 72px;
+
+	.logo-container {
+		padding-left: 10px;
+
+		img {
+			width: 45px;
+			height: 45px;
+		}
+
+		h2{
+			font-size: 24px;
+			display: inline-block;
+		}
+
+		img,
+		h2 {
+			vertical-align: middle;
+		}
+	}
+
+	.nav-form-container {
+		float: right;
+
+		.button {
+			font-size: 24px;
+			text-align: center;
+			width: 195px;
+		}
+	}
+
+	.logo-container,
+	.nav-form-container .button {
+		display: inline-block;
+		line-height: 70px;
+	}
+}
+
+.cta-button {
+	font-weight: bold;
+	color: #fff;
+	background: #2b78e4;
+}
