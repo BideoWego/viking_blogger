@@ -1,0 +1,40 @@
+// nav
+
+.navbar {
+
+	.logo-container {
+		padding-left: 10px;
+		float: left;
+
+		img {
+			width: 45px;
+			height: 45px;
+		}
+
+		h2{
+			font-size: 24px;
+			display: inline-block;
+		}
+
+		img,
+		h2 {
+			vertical-align: middle;
+		}
+	}
+
+	.nav-form-container {
+		float: right;
+
+		.button {
+			font-size: 24px;
+			text-align: center;
+			width: 195px;
+			display: inline-block;
+		}
+	}
+
+	.logo-container,
+	.nav-form-container .button {
+		line-height: 70px;
+	}
+}

@@ -1,0 +1,41 @@
+// posts
+
+.post-container {
+	margin: 30px auto;
+	width: 620px;
+
+	.post {
+		padding: 40px 80px;
+
+		h2 {
+			font-size: 24px;
+			margin: 0.5em 0;
+		}
+
+		.post-date {
+			font-size: 14px;
+			text-align: right;
+			color: #ccc;
+			margin: 1em 0;
+		}
+
+		.post-body {
+			font-size: 16px;
+			color: #444;
+			line-height: 1.25;
+		}
+
+		.comments-container {
+			margin: 20px 0;
+			font-size: 14px;
+
+			.view-comments {
+				float: left;
+			}
+
+			.write-comment {
+				float: right;
+			}
+		}
+	}
+}

@@ -441,6 +441,10 @@ body {
 div {
   border: 1px solid #000; }
 
+a {
+  color: #085394;
+  text-decoration: none; }
+
 .navbar,
 .navbar .logo-container,
 .navbar .nav-form-container,
@@ -467,6 +471,11 @@ div {
   .navbar .nav-form-container:after,
   .search-container:after {
     clear: both; }
+
+.cta-button {
+  font-weight: bold;
+  color: #fff;
+  background: #2b78e4; }
 
 .navbar .logo-container {
   padding-left: 10px;
@@ -508,9 +517,29 @@ div {
     width: 136px;
     margin-left: 16px; }
 
-.cta-button {
-  font-weight: bold;
-  color: #fff;
-  background: #2b78e4; }
+.post-container {
+  margin: 30px auto;
+  width: 620px; }
+  .post-container .post {
+    padding: 40px 80px; }
+    .post-container .post h2 {
+      font-size: 24px;
+      margin: 0.5em 0; }
+    .post-container .post .post-date {
+      font-size: 14px;
+      text-align: right;
+      color: #ccc;
+      margin: 1em 0; }
+    .post-container .post .post-body {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.25; }
+    .post-container .post .comments-container {
+      margin: 20px 0;
+      font-size: 14px; }
+      .post-container .post .comments-container .view-comments {
+        float: left; }
+      .post-container .post .comments-container .write-comment {
+        float: right; }
 
 /*# sourceMappingURL=style.css.map */

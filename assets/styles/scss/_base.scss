@@ -1,0 +1,27 @@
+// base
+
+body {
+	font-family: Helvetica, sans-serif;
+}
+
+div {
+	border: 1px solid #000;
+}
+
+a {
+	color: #085394;
+	text-decoration: none;
+}
+
+.navbar,
+.navbar .logo-container,
+.navbar .nav-form-container,
+.search-container {
+	@include container;
+}
+
+.cta-button {
+	font-weight: bold;
+	color: #fff;
+	background: #2b78e4;
+}
