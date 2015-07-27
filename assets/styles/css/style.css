@@ -527,7 +527,6 @@ a {
       margin: 0.5em 0; }
     .post-container .post .post-date {
       font-size: 14px;
-      text-align: right;
       color: #ccc;
       margin: 1em 0; }
     .post-container .post .post-body {
@@ -541,5 +540,12 @@ a {
         float: left; }
       .post-container .post .comments-container .write-comment {
         float: right; }
+  .post-container .post.text .post-date {
+    text-align: right; }
+  .post-container .post.photo .photo-container {
+    width: 100%;
+    height: auto;
+    background: #eee;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

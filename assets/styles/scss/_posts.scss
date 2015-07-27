@@ -14,7 +14,6 @@
 
 		.post-date {
 			font-size: 14px;
-			text-align: right;
 			color: #ccc;
 			margin: 1em 0;
 		}
@@ -37,5 +36,16 @@
 				float: right;
 			}
 		}
+	}
+
+	.post.text .post-date {
+		text-align: right;
+	}
+
+	.post.photo .photo-container {
+		width: 100%;
+		height: auto;
+		background: #eee;
+		text-align: center;
 	}
 }
